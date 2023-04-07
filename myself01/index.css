@@ -1,0 +1,43 @@
+
+#text01{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 12%;
+    margin-left: 10%;
+}
+
+#img01{
+    height: 0vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+    
+}
+
+#img01 img {
+    width: 30%;
+    margin-left: 60%;
+    margin-bottom: 15%;
+    border-radius: 80%;
+    border: 10px dashed #ba8ec7;
+    
+  
+}
+
+#git01{
+    height: 0vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+    
+}
+#git01 img {
+    width: 5%;
+    margin-left: 10%;
+    margin-top: 5%;
+    border-radius: 10%;
+    
+}
