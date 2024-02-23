@@ -1,43 +1,51 @@
-
-#text01{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 5%;
-    margin-left: 10%;
-}
-
-#img01{
-    height: 0vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: right;
-    
-}
-
-#img01 img {
-    width: 30%;
-    margin-left: 60%;
-    margin-bottom: 20%;
-    border-radius: 80%;
-    border: 10px dashed #ba8ec7;
-    
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
   
-}
-
-#git01{
-    height: 0vh;
+  .main-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 50px; /* Adjust the top padding as needed */
+  }
+  
+  .profile-section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: right;
-    
-}
-#git01 img {
-    width: 5%;
-    margin-left: 10%;
-    margin-top: 5%;
-    border-radius: 10%;
-    
-}
+    align-items: center;
+    margin-right: 50px; /* Adjust the right margin as needed */
+  }
+  
+  .profile-image {
+    border-radius: 50%; /* Makes the image round */
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Adjust size as needed */
+    margin-bottom: 20px;
+  }
+  
+  .profile-text h1 {
+    font-size: 2em; /* Adjust size as needed */
+    margin-bottom: 0.5em;
+  }
+  
+  .profile-text p {
+    margin-bottom: 0.25em;
+  }
+  
+  .content-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .content-box {
+    background-color: #f0f0f0; /* Light grey background */
+    padding: 20px; /* Padding inside the boxes */
+    margin-bottom: 20px; /* Spacing between boxes */
+    width: 200px; /* Adjust width as needed */
+    text-align: center;
+    /* Additional styling can be added here */
+  }
+  
