@@ -1,51 +1,121 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+body {
+    font-family: 'Noto Sans KR', sans-serif;
   }
-  
-  .main-container {
+
+.header-container {
     display: flex;
-    justify-content: center;
+    flex-direction: row; /* Align children horizontally */
     align-items: flex-start;
-    padding-top: 50px; /* Adjust the top padding as needed */
+    padding: 300px;
+    margin-left: auto; /* 오른쪽 정렬을 위해 왼쪽 마진을 auto로 설정 */
+    margin-right: 80px; /* 오른쪽 여백 설정 */
+    max-width: 1200px; /* 최대 너비 설정, 필요에 따라 조정 가능 */
   }
-  
-  .profile-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 50px; /* Adjust the right margin as needed */
-  }
+
   
   .profile-image {
-    border-radius: 50%; /* Makes the image round */
-    width: 150px; /* Adjust size as needed */
-    height: 150px; /* Adjust size as needed */
-    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 300px; /* 이미지 크기 설정 */
+    height: 300px; /* 이미지 크기 설정 */
   }
   
-  .profile-text h1 {
-    font-size: 2em; /* Adjust size as needed */
-    margin-bottom: 0.5em;
+  .profile-image img {
+    width: 100%;
+    height: auto;
   }
   
-  .profile-text p {
-    margin-bottom: 0.25em;
+  .email-button {
+    display: inline-block;
+    margin-top: 20px; /* Adjust as needed for alignment */
+    padding: 10px 20px;
+    background-color: #333; /* Color to match other buttons */
+    color: white; /* Text color */
+    text-decoration: none; /* No underline */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Adjust as needed */
   }
   
-  .content-section {
+  /* Hover effect for the email button */
+  .email-button:hover {
+    background-color: #555; /* Slightly lighter on hover */
+  }
+  
+  .profile-info h1 {
+    margin-left: 20px;
+    font-size: 50px;
+    font-weight: bold;
+  }
+  
+  .profile-info p {
+    margin-left: 20px;
+    font-size: 30px;
+  }
+
+  .profile-info2 {
+    margin-top: 0px; /* Adjust this value as needed to align with .profile-info */
+    /* ...other styles... */
+  }
+  
+  
+
+  .github-button {
+    display: inline-block;
+    margin-top: 20px; /* Adjust as needed for alignment */
+    padding: 10px 20px;
+    background-color: #333; /* GitHub dark grey */
+    color: white; /* Text color */
+    text-decoration: none; /* No underline */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Adjust as needed */
+  }
+  
+  /* Hover effect for the GitHub button */
+  .github-button:hover {
+    background-color: #555; /* Slightly lighter on hover */
+  }
+
+  .notion-button {
+    display: inline-block;
+    margin-top: 20px; /* Adjust as needed for alignment */
+    padding: 10px 20px;
+    background-color: #333; /* GitHub dark grey */
+    color: white; /* Text color */
+    text-decoration: none; /* No underline */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Adjust as needed */
+  }
+  
+  /* Hover effect for the GitHub button */
+  .github-button:hover {
+    background-color: #555; /* Slightly lighter on hover */
+  }
+
+
+
+  
+  .menu-bar {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: column; /* or 'row' if you want horizontal menu */
+    padding: 20px;
+    background-color: white;
+    /* Style as needed */
   }
   
-  .content-box {
-    background-color: #f0f0f0; /* Light grey background */
-    padding: 20px; /* Padding inside the boxes */
-    margin-bottom: 20px; /* Spacing between boxes */
-    width: 200px; /* Adjust width as needed */
+  .menu-item {
+    padding: 10px;
+    margin: 5px;
+    background-color: #333; /* Match the GitHub button color */
+    color: white; /* Text color to contrast the dark background */
     text-align: center;
-    /* Additional styling can be added here */
+    text-decoration: none; /* Remove the underline from links */
+    border-radius: 5px; /* Rounded corners to match the GitHub button */
+    font-size: 16px; /* Adjust as needed */
+    display: block; /* Adjust as needed */
+  }
+  
+  .menu-item:hover {
+    background-color: #555; /* Slightly lighter on hover, matching the GitHub button hover effect */
+    cursor: pointer; /* Change the cursor to indicate it's clickable */
   }
   
