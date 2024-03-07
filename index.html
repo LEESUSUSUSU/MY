@@ -1,84 +1,26 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="index.css" rel="stylesheet" type="text/css" />
-    <title>LEESUYEON 페이지</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suyeon Lee - Data Scientist</title>
+<link rel="stylesheet" href="index.css">
 </head>
 <body>
 
-   
+<div class="header">
+    <div>Daniella Marto</div>
+    <div class="menu" onclick="toggleMenu()">☰</div>
+</div>
 
-<div class="header-container">
-  <div class="profile-image">
-    <img src="./img/KakaoTalk_Photo_2024-02-23-12-05-13.jpeg" alt="LEESUYEON" class="profile-pic">
-  </div>
-  <div class="profile-info">
-    <h1>LEE_SUYEON</h1>
-    <p>데이터 과학자 이수연</p>
-        <a href="mailto:syeun023@gamil.com" class="email-button">Email Me</a>
-        <a href="https://github.com/LEESUSUSUSU?tab=repositories" class="github-button">GitHub</a>
-        <a href="https://suyeun.notion.site/83900228acec4c9ab1dd5f438bd22421?v=f47f21ede5694d9b96dd154fb6b66cd6&pvs=4" class="notion-button">Notion</a>
-  </div>
-    
-    
-  </div>
+<div class="content">
+    <div class="title">Data scientist Suyeon_Lee</div>
+    <img src="./img/KakaoTalk_Photo_2024-02-23-12-05-13.jpeg" alt="Suyeon Lee" class="profile-pic">
+    <div class="intro">Hello, my name is Lee Suyeon, and I work as a data scientist primarily using Python for data analysis.</div>
+    <div class="scroll-down" onclick="scrollDown()">Scroll down ↓</div>
+</div>
 
-  <div class="menu-bar">
-    <a href="Project_1.html" class="menu-item">인공지능 기반 기차 대차 이상 소음 위치 감지 시스템 구축</a>
-    <div class="project-description">
-      <h3>🏆 데이터 경진대회 (인공지능 기반 기차 대차 이상 소음 위치 감지 시스템 구축)</h3>
-      <ul>
-        <li><strong>기간</strong>: 2023년 9월 ~ 2023년 11월</li>
-        <li><strong>역할</strong>: 데이터 분석, 모델링, 수학적 알고리즘</li>
-        <li><strong>기술 스택</strong>: Python, Pandas, Scikit-Learn</li>
-        <li><strong>성과</strong>: 최종 발표 단계까지 진행함으로써 여러 모델링의 기본적 지식을 습득하고 데이터들이 시사하는 정보가 무엇인지 파악하는 것 역시 중요하다는 것을 알게됨</li>
-        <li><strong>설명</strong>: 타겟이 없는 상태에서 유의미한 인사이트를 발견하기 위함</li>
-      </ul>
-    </div>
-    <a href="Project_2.html" class="menu-item">유퀴즈 머신러닝</a>
-    <div class="project-description">
-      <h3>🚀 유퀴즈 데이터를 이용한 머신러닝 분석</h3>
-      <ul>
-        <li><strong>기간</strong>: 2024.02월 ~ 2024.02월</li>
-        <li><strong>역할</strong>: 날짜 별 EDA, 시청률 모델링</li>
-        <li><strong>기술 스택</strong>: Python, Pandas, Scikit-Learn</li>
-        <li><strong>성과</strong>: 시청률 분석에 높은 정확도를 예측할 수 있는 모델링</li>
-        <li><strong>설명</strong>: 유퀴즈 라는 프로그램을 통해 우리가 아는 사람이 나온다면 시청률 과 조회수가 어떻게 될까?</li>
-      </ul>
-    </div>
-    <a href="Project_3.html" class="menu-item">대구 교통사고 피해 예측 AI 경진대회</a>
-  <!-- Project 3 Description -->
-    <div id="project3" class="project-description">
-        <h3>🏅 데이콘 경진대회 (대구 교통사고 피해 예측 AI 경진대회)</h3>
-        <ul>
-          <li><strong>기간</strong>: 2024년 1월 ~ 2024년 2월</li>
-          <li><strong>역할</strong>: 데이터 분석, 모델링</li>
-          <li><strong>기술 스택</strong>: Python, Pandas, Scikit-Learn</li>
-          <li><strong>성과</strong>: 0.429 점대로 마무리 하였으나 1등과 0.04점대 차이를 확인함으로써 차이점을 확인하고 인사이트 발견의 생각의 폭을 넓히는 계기가 됨</li>
-          <li><strong>설명</strong>: 제공된 데이터를 이용하여 새로운 인사이트를 얻고 제공된 데이터 외에 다른 데이터들을 함께 사용함으로써 정확한 예측 모델링을 만들기 위한 대회</li>
-        </ul>
-      </div>
-    
-      <!-- Project 4 -->
-      <a href="Project_4.html" class="menu-item">노인들을 위한 나라 웹사이트 제작</a>
-      <!-- Project 4 Description -->
-      <div id="project4" class="project-description">
-        <h3>🚀 노인들을 위한 나라 웹사이트 제작</h3>
-        <ul>
-          <li><strong>기간</strong>: 2023년 8월 ~ 2023년 9월</li>
-          <li><strong>역할</strong>: 백엔드 개발</li>
-          <li><strong>기술 스택</strong>: Node.js, Spring Boot, mysqlDB</li>
-          <li><strong>설명</strong>: 노인 사용자들의 편의성을 고려하여 디자인된 웹사이트 개발에 참여. 사용자 인터페이스와 백엔드 로직을 담당하여, 노인 사용자들이 쉽게 정보를 접근하고 이용할 수 있도록 구현.</li>
-        </ul>
-      </div>
-    </div>
-    
-
-  
+<script src="main.js"></script>
 
 </body>
 </html>
-
